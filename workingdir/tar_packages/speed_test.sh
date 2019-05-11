@@ -1,7 +1,10 @@
 #!/bin/sh
 
-echo testing untar package.tar
-time ./untar_repeat.sh package.tar
+tar_fname=package.tar
+# test on tar file
+echo testing untar $tar_fname
+time ./untar_repeat.sh $tar_fname
 
-echo testing untar package.tar.gz
-time ./untar_repeat.sh package.tar.gz
+# test on tar.gz file
+echo testing untar $tar_fname.gz
+time ./untar_repeat.sh $tar_fname.gz
