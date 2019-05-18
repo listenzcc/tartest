@@ -6,6 +6,7 @@ if [[ ! -f $1 ]]; then
     exit 0
 fi
 echo --------------------------
-echo Filename: $1 reads:
+echo \| Filename: $1 reads:
+echo --------------------------
 cat $1
 echo
